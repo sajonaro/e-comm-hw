@@ -27,6 +27,7 @@ services:
       - environments/php_app.env    
     volumes:
       - ./app:/app
+      # this is to provide customised php.ini file to the php container
       - ./php/php.ini:/usr/local/etc/php/conf.d/php.ini
 
   mysql:

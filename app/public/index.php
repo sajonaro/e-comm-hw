@@ -1,13 +1,30 @@
-
+<?php
+    require 'sessionFunctions.php';
+    
+    startSession();
+ ?>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>My First PHP Page</title>
+    <title>session counter page</title>
 </head>
-<body>
-    <h1>session testing PHP Page</h1>
-    <?php
-        echo "Hello World!";
-    ?>          
-</body>
+    <body>
+        <h1>session testing PHP Page</h1>
+            
+        <p> 
+            <?php echo "Hello World!"; ?>
+        </p>
 
+        <p>
+            <?php echo "session counter";
+                  echo countSession();   
+            ?>    
+        </p>
+        
+        
+        <p>
+            <?php  echo checkLoadedIniFile(); ?>    
+        </p>
+        
+    </body>
 </html>
