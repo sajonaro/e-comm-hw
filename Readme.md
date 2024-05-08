@@ -1,3 +1,14 @@
+# simple php site basd on YII2 
+
+learning goals:
+- get to know YII
+- vertical slices architecture
+
+
+
+
+
+
 ## Useful scripts:
 
 - to stand up docker compose stack
@@ -15,3 +26,7 @@ sudo docker cp hw_php_app_1:/usr/local/etc/php/php.ini-production .
 sudo docker compose up -d --no-deps --build app
 ```
 
+- to use composer e.g. to create new yii based project (named e-comm-hw)
+```
+docker compose run --rm composer create-project yiisoft/app --prefer-dist --stability=dev e-comm-hw
+```
